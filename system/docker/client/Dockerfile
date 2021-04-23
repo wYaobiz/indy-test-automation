@@ -58,7 +58,7 @@ RUN if [ "$LIBSOVTOKEN_INSTALL" = "yes" ]; then \
     fi
 
 # user
-ARG u_id=1000
+ENV u_id=1000
 ARG u_name=user
 
 RUN if [ "$u_id" != "0" ]; then \
